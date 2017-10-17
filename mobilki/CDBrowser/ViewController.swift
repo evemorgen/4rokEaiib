@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var artistTextField: UITextField!
     let delegate = UIApplication.shared.delegate as! AppDelegate
-    var albums: [AnyObject] = []
+    var albums: [Dictionary<String, Any>] = []
 
     //pasted from https://stackoverflow.com/questions/41163026/how-to-convert-json-string-into-array-of-dictionaries-in-ios-swift-3
     func convertToDictionary(text: String) -> Any? {
@@ -36,9 +38,11 @@ class ViewController: UIViewController {
                 if error == nil {
                     
                     let urlContent = NSString(data: data!, encoding: String.Encoding.ascii.rawValue) as NSString!
-                    if let contentDict = self.convertToDictionary(text: urlContent as! String ) as? [AnyObject] {
-                        print(contentDict as Any)
+                    if let contentDict = self.convertToDictionary(text: urlContent as! String ) as? [Dictionary<String, Any>] {
+                        
                         self.albums = contentDict
+                        self.titleTextField.text = self.albums[0]["album"] as! String
+                        self.artistTextField = self.albums[0]["artis"] as! String
                     }
                     
                 }
