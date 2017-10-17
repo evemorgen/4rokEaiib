@@ -1,0 +1,88 @@
+1. cd /tmp/
+2. mkdir lab1; cd lab1; touch lab1.sh
+3. chmod 777 lab1.sh
+4. echo "pierwsza linia" >> lab1.sh; echo "druga linia" >> lab1.sh
+5. cp lab1.sh lab1a.sh
+6. chmod 777 lab1a.sh; chmod g-rwx lab1a.sh
+7. cd ../; mkdir labek; cp lab1/lab1.sh labek/
+8. ./chrismas_tree.sh
+                                                                                          o
+                                                                                         o o
+                                                                                        o. co
+                                                                                       o  c .o
+                                                                                      o       o
+                                                                                     ooooooooooo
+                                                                                       o     o
+                                                                                      o       o
+                                                                                     o      c .o
+                                                                                    o           o
+          **MERRY**                                                                o. c   **CHRISTMAS**
+                                                                                  ooooooooooooooooo
+                                                                                    o           o
+                                                                                   o. c          o
+                                                                                  o            c .o
+                                                                                 o                 o
+                                                                                o                   o
+                                                                               ooooooooooooooooooooooo
+                                                                                        o   o
+                                                                                       o     o
+                                                                                      o       o
+                                                                                     o         o
+                                                                                    ooooooooooooo
+
+9. cat zalogowanych.sh
+ile=`who | awk '{print $1}' | sort | uniq | wc  -l`
+ja=`whoami`
+echo "Hello, my name is $ja, and there is $ile users logged in"
+
+./zalogowanych
+Hello, my name is pgalczynski, and there is 1 users logged in
+
+10. cat szukaj_tutaj.sh
+username=`whoami | cut -c -7`
+shellpid=`ps uax | grep bas[h] | grep $username | awk '{print $2}'`
+pid=`echo $shellpid | awk '{print $1}'`
+cwd=`lsof -p $pid | grep cwd | awk '{print $9}'`
+ls $cwd | grep $1
+
+pgalczynski@vm-10-177-98-159:~$ ls
+chrismas_tree.sh  dump.txt  lab1  zalogowanych.sh
+pgalczynski@vm-10-177-98-159:~$ lab1/szukaj_tutaj.sh chrismas
+chrismas_tree.sh
+
+11. cat server.sh
+if [ $1 = "start" ]
+then
+    echo "starting server"
+elif [ $1 = "stop" ]
+then
+    echo "stopping server"
+elif [ $1 = "restart" ]
+then
+    echo "restarting server now"
+fi
+
+pgalczynski@vm-10-177-98-159:~/lab1$ ./server.sh start
+starting server
+pgalczynski@vm-10-177-98-159:~/lab1$ ./server.sh stop
+stopping server
+pgalczynski@vm-10-177-98-159:~/lab1$ ./server.sh restart
+restarting server now
+
+12. cat pliki-wykonywalne.sh
+find /bin/ -type f -perm -u+
+
+pgalczynski@vm-10-177-98-159:~/lab1$ ./pliki-wykonywalne.sh
+/bin/setfacl
+/bin/bunzip2
+/bin/rmdir
+/bin/tar
+/bin/less
+/bin/su
+/bin/fgconsole
+/bin/lsblk
+/bin/zegrep
+/bin/pwd
+
+13. sudo apt-get install git
+14. sudo apt-get purge git
