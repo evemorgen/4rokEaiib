@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DEC6CB501F9F265600156D38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC6CB4F1F9F265600156D38 /* AppDelegate.swift */; };
-		DEC6CB521F9F265600156D38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC6CB511F9F265600156D38 /* ViewController.swift */; };
-		DEC6CB551F9F265600156D38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC6CB531F9F265600156D38 /* Main.storyboard */; };
-		DEC6CB571F9F265600156D38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC6CB561F9F265600156D38 /* Assets.xcassets */; };
-		DEC6CB5A1F9F265600156D38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC6CB581F9F265600156D38 /* LaunchScreen.storyboard */; };
+		DEA9EC9E1F9D019F00084B5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA9EC9D1F9D019F00084B5F /* AppDelegate.swift */; };
+		DEA9ECA01F9D019F00084B5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA9EC9F1F9D019F00084B5F /* ViewController.swift */; };
+		DEA9ECA31F9D019F00084B5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA9ECA11F9D019F00084B5F /* Main.storyboard */; };
+		DEA9ECA51F9D019F00084B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA9ECA41F9D019F00084B5F /* Assets.xcassets */; };
+		DEA9ECA81F9D019F00084B5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA9ECA61F9D019F00084B5F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DEC6CB4C1F9F265600156D38 /* PG_mapview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PG_mapview.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEC6CB4F1F9F265600156D38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DEC6CB511F9F265600156D38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DEC6CB541F9F265600156D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DEC6CB561F9F265600156D38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DEC6CB591F9F265600156D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DEC6CB5B1F9F265600156D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA9EC9A1F9D019F00084B5F /* HelloWorldTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorldTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA9EC9D1F9D019F00084B5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEA9EC9F1F9D019F00084B5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEA9ECA21F9D019F00084B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEA9ECA41F9D019F00084B5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEA9ECA71F9D019F00084B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEA9ECA91F9D019F00084B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DEC6CB491F9F265600156D38 /* Frameworks */ = {
+		DEA9EC971F9D019F00084B5F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,72 +35,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DEC6CB431F9F265500156D38 = {
+		DEA9EC911F9D019F00084B5F = {
 			isa = PBXGroup;
 			children = (
-				DEC6CB4E1F9F265600156D38 /* PG_mapview */,
-				DEC6CB4D1F9F265600156D38 /* Products */,
+				DEA9EC9C1F9D019F00084B5F /* HelloWorldTutorial */,
+				DEA9EC9B1F9D019F00084B5F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DEC6CB4D1F9F265600156D38 /* Products */ = {
+		DEA9EC9B1F9D019F00084B5F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DEC6CB4C1F9F265600156D38 /* PG_mapview.app */,
+				DEA9EC9A1F9D019F00084B5F /* HelloWorldTutorial.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DEC6CB4E1F9F265600156D38 /* PG_mapview */ = {
+		DEA9EC9C1F9D019F00084B5F /* HelloWorldTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				DEC6CB4F1F9F265600156D38 /* AppDelegate.swift */,
-				DEC6CB511F9F265600156D38 /* ViewController.swift */,
-				DEC6CB531F9F265600156D38 /* Main.storyboard */,
-				DEC6CB561F9F265600156D38 /* Assets.xcassets */,
-				DEC6CB581F9F265600156D38 /* LaunchScreen.storyboard */,
-				DEC6CB5B1F9F265600156D38 /* Info.plist */,
+				DEA9EC9D1F9D019F00084B5F /* AppDelegate.swift */,
+				DEA9EC9F1F9D019F00084B5F /* ViewController.swift */,
+				DEA9ECA11F9D019F00084B5F /* Main.storyboard */,
+				DEA9ECA41F9D019F00084B5F /* Assets.xcassets */,
+				DEA9ECA61F9D019F00084B5F /* LaunchScreen.storyboard */,
+				DEA9ECA91F9D019F00084B5F /* Info.plist */,
 			);
-			path = PG_mapview;
+			path = HelloWorldTutorial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DEC6CB4B1F9F265600156D38 /* PG_mapview */ = {
+		DEA9EC991F9D019F00084B5F /* HelloWorldTutorial */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEC6CB5E1F9F265600156D38 /* Build configuration list for PBXNativeTarget "PG_mapview" */;
+			buildConfigurationList = DEA9ECAC1F9D019F00084B5F /* Build configuration list for PBXNativeTarget "HelloWorldTutorial" */;
 			buildPhases = (
-				DEC6CB481F9F265600156D38 /* Sources */,
-				DEC6CB491F9F265600156D38 /* Frameworks */,
-				DEC6CB4A1F9F265600156D38 /* Resources */,
+				DEA9EC961F9D019F00084B5F /* Sources */,
+				DEA9EC971F9D019F00084B5F /* Frameworks */,
+				DEA9EC981F9D019F00084B5F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PG_mapview;
-			productName = PG_mapview;
-			productReference = DEC6CB4C1F9F265600156D38 /* PG_mapview.app */;
+			name = HelloWorldTutorial;
+			productName = HelloWorldTutorial;
+			productReference = DEA9EC9A1F9D019F00084B5F /* HelloWorldTutorial.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DEC6CB441F9F265500156D38 /* Project object */ = {
+		DEA9EC921F9D019F00084B5F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Patryk Gałczyński";
 				TargetAttributes = {
-					DEC6CB4B1F9F265600156D38 = {
+					DEA9EC991F9D019F00084B5F = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = DEC6CB471F9F265500156D38 /* Build configuration list for PBXProject "PG_mapview" */;
+			buildConfigurationList = DEA9EC951F9D019F00084B5F /* Build configuration list for PBXProject "HelloWorldTutorial" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -108,54 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = DEC6CB431F9F265500156D38;
-			productRefGroup = DEC6CB4D1F9F265600156D38 /* Products */;
+			mainGroup = DEA9EC911F9D019F00084B5F;
+			productRefGroup = DEA9EC9B1F9D019F00084B5F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DEC6CB4B1F9F265600156D38 /* PG_mapview */,
+				DEA9EC991F9D019F00084B5F /* HelloWorldTutorial */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DEC6CB4A1F9F265600156D38 /* Resources */ = {
+		DEA9EC981F9D019F00084B5F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEC6CB5A1F9F265600156D38 /* LaunchScreen.storyboard in Resources */,
-				DEC6CB571F9F265600156D38 /* Assets.xcassets in Resources */,
-				DEC6CB551F9F265600156D38 /* Main.storyboard in Resources */,
+				DEA9ECA81F9D019F00084B5F /* LaunchScreen.storyboard in Resources */,
+				DEA9ECA51F9D019F00084B5F /* Assets.xcassets in Resources */,
+				DEA9ECA31F9D019F00084B5F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DEC6CB481F9F265600156D38 /* Sources */ = {
+		DEA9EC961F9D019F00084B5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEC6CB521F9F265600156D38 /* ViewController.swift in Sources */,
-				DEC6CB501F9F265600156D38 /* AppDelegate.swift in Sources */,
+				DEA9ECA01F9D019F00084B5F /* ViewController.swift in Sources */,
+				DEA9EC9E1F9D019F00084B5F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DEC6CB531F9F265600156D38 /* Main.storyboard */ = {
+		DEA9ECA11F9D019F00084B5F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DEC6CB541F9F265600156D38 /* Base */,
+				DEA9ECA21F9D019F00084B5F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		DEC6CB581F9F265600156D38 /* LaunchScreen.storyboard */ = {
+		DEA9ECA61F9D019F00084B5F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DEC6CB591F9F265600156D38 /* Base */,
+				DEA9ECA71F9D019F00084B5F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DEC6CB5C1F9F265600156D38 /* Debug */ = {
+		DEA9ECAA1F9D019F00084B5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -220,7 +220,7 @@
 			};
 			name = Debug;
 		};
-		DEC6CB5D1F9F265600156D38 /* Release */ = {
+		DEA9ECAB1F9D019F00084B5F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -270,35 +270,29 @@
 			};
 			name = Release;
 		};
-		DEC6CB5F1F9F265600156D38 /* Debug */ = {
+		DEA9ECAD1F9D019F00084B5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2XZRDH8496;
-				INFOPLIST_FILE = PG_mapview/Info.plist;
+				INFOPLIST_FILE = HelloWorldTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "tk.evemorgen.PG-mapview";
+				PRODUCT_BUNDLE_IDENTIFIER = tk.evemorgen.HelloWorldTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		DEC6CB601F9F265600156D38 /* Release */ = {
+		DEA9ECAE1F9D019F00084B5F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2XZRDH8496;
-				INFOPLIST_FILE = PG_mapview/Info.plist;
+				INFOPLIST_FILE = HelloWorldTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "tk.evemorgen.PG-mapview";
+				PRODUCT_BUNDLE_IDENTIFIER = tk.evemorgen.HelloWorldTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,25 +301,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DEC6CB471F9F265500156D38 /* Build configuration list for PBXProject "PG_mapview" */ = {
+		DEA9EC951F9D019F00084B5F /* Build configuration list for PBXProject "HelloWorldTutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DEC6CB5C1F9F265600156D38 /* Debug */,
-				DEC6CB5D1F9F265600156D38 /* Release */,
+				DEA9ECAA1F9D019F00084B5F /* Debug */,
+				DEA9ECAB1F9D019F00084B5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEC6CB5E1F9F265600156D38 /* Build configuration list for PBXNativeTarget "PG_mapview" */ = {
+		DEA9ECAC1F9D019F00084B5F /* Build configuration list for PBXNativeTarget "HelloWorldTutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DEC6CB5F1F9F265600156D38 /* Debug */,
-				DEC6CB601F9F265600156D38 /* Release */,
+				DEA9ECAD1F9D019F00084B5F /* Debug */,
+				DEA9ECAE1F9D019F00084B5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DEC6CB441F9F265500156D38 /* Project object */;
+	rootObject = DEA9EC921F9D019F00084B5F /* Project object */;
 }

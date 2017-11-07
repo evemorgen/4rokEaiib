@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorldTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byN-nO-biz">
+                                <rect key="frame" x="16" y="314" width="343" height="104.66666666666669"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <state key="normal" title="😎">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nQQ-ML-ByD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2m-cj-eSr">
+                                <rect key="frame" x="16" y="189" width="343" height="105"/>
+                                <color key="backgroundColor" red="0.93583899736404419" green="0.87704426050186157" blue="0.14554977416992188" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <state key="normal" title="🤖">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qcd-Na-xtn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello auto layout :)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFk-Ea-Fur">
+                                <rect key="frame" x="222" y="737.66666666666663" width="143" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKs-2y-Txv">
+                                <rect key="frame" x="16" y="64" width="343" height="105"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="22" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Hello World!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kv2-4H-cAJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABd-T4-bwk">
+                                <rect key="frame" x="16" y="438.66666666666669" width="343" height="105.00000000000006"/>
+                                <color key="backgroundColor" red="0.94150298833847046" green="0.79366022348403931" blue="0.12963500618934631" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="LGh-12-QEE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <state key="normal" title="👻">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Inv-r8-jxc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vKs-2y-Txv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Nt-fH-p6C"/>
+                            <constraint firstItem="W2m-cj-eSr" firstAttribute="leading" secondItem="byN-nO-biz" secondAttribute="leading" id="2vK-rD-LAM"/>
+                            <constraint firstItem="W2m-cj-eSr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vKs-2y-Txv" secondAttribute="leading" id="6ns-l0-EJq"/>
+                            <constraint firstItem="W2m-cj-eSr" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vKs-2y-Txv" secondAttribute="trailing" id="8XN-Tg-dfy"/>
+                            <constraint firstItem="ABd-T4-bwk" firstAttribute="height" secondItem="byN-nO-biz" secondAttribute="height" id="Hfs-Rg-r3d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hFk-Ea-Fur" secondAttribute="bottom" constant="20" id="TOh-kb-2WU"/>
+                            <constraint firstItem="vKs-2y-Txv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="VV2-9J-hnI"/>
+                            <constraint firstItem="W2m-cj-eSr" firstAttribute="leading" secondItem="ABd-T4-bwk" secondAttribute="leading" id="Zlg-J3-EOg"/>
+                            <constraint firstItem="W2m-cj-eSr" firstAttribute="trailing" secondItem="ABd-T4-bwk" secondAttribute="trailing" id="jbu-Qd-xG6"/>
+                            <constraint firstItem="byN-nO-biz" firstAttribute="height" secondItem="W2m-cj-eSr" secondAttribute="height" id="l0g-5f-fQQ"/>
+                            <constraint firstItem="ABd-T4-bwk" firstAttribute="top" secondItem="byN-nO-biz" secondAttribute="bottom" constant="20" id="ooK-d9-a8V"/>
+                            <constraint firstItem="W2m-cj-eSr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pK5-y7-Mjs"/>
+                            <constraint firstItem="W2m-cj-eSr" firstAttribute="trailing" secondItem="byN-nO-biz" secondAttribute="trailing" id="roK-jQ-g3N"/>
+                            <constraint firstItem="byN-nO-biz" firstAttribute="top" secondItem="W2m-cj-eSr" secondAttribute="bottom" constant="20" id="yCA-nU-6S7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hFk-Ea-Fur" secondAttribute="trailing" constant="10" id="yU7-eW-g7c"/>
+                            <constraint firstItem="W2m-cj-eSr" firstAttribute="top" secondItem="vKs-2y-Txv" secondAttribute="bottom" constant="20" id="yaJ-Hi-1hq"/>
+                            <constraint firstItem="W2m-cj-eSr" firstAttribute="height" secondItem="vKs-2y-Txv" secondAttribute="height" id="zOM-Ra-ccw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.251231527093594"/>
+        </scene>
+    </scenes>
+</document>
