@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PG_mapview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patryk Gałczyński" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIh-4y-del">
+                                <rect key="frame" x="73.666666666666686" y="44" width="228" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="6bc-Kf-TGe" userLabel="Buttons">
+                                <rect key="frame" x="63.666666666666657" y="733" width="247.99999999999997" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXX-w9-bYx">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="30"/>
+                                        <state key="normal" title="Stop"/>
+                                        <connections>
+                                            <action selector="stopTrackingWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nJg-Dr-lya"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3A-Tu-jkF">
+                                        <rect key="frame" x="106" y="0.0" width="36" height="30"/>
+                                        <state key="normal" title="Clear"/>
+                                        <connections>
+                                            <action selector="clearTrackingWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="08L-wo-ueh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BT6-PU-7YN">
+                                        <rect key="frame" x="212.00000000000003" y="0.0" width="36" height="30"/>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="startTrackingWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P9c-YE-dXA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="O3A-Tu-jkF" firstAttribute="width" secondItem="BT6-PU-7YN" secondAttribute="width" id="en6-S0-MX0"/>
+                                    <constraint firstItem="aXX-w9-bYx" firstAttribute="centerY" secondItem="O3A-Tu-jkF" secondAttribute="centerY" id="qia-st-Cas"/>
+                                    <constraint firstItem="aXX-w9-bYx" firstAttribute="width" secondItem="O3A-Tu-jkF" secondAttribute="width" id="s6q-lI-Y9M"/>
+                                </constraints>
+                            </stackView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="W5r-A3-TaS">
+                                <rect key="frame" x="16" y="85" width="343" height="628"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjQ-SF-ebh" userLabel="AddressLabel">
+                                <rect key="frame" x="187.66666666666666" y="721" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="W5r-A3-TaS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0EX-Yu-vKw"/>
+                            <constraint firstItem="ZIh-4y-del" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0XR-0K-dUJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W5r-A3-TaS" secondAttribute="trailing" constant="16" id="2m6-cx-85l"/>
+                            <constraint firstItem="6bc-Kf-TGe" firstAttribute="top" secondItem="KjQ-SF-ebh" secondAttribute="bottom" constant="12" id="4TD-Uo-GHX"/>
+                            <constraint firstItem="6bc-Kf-TGe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9bX-Fq-3rb"/>
+                            <constraint firstItem="W5r-A3-TaS" firstAttribute="top" secondItem="ZIh-4y-del" secondAttribute="bottom" constant="5" id="BkU-xZ-oYb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6bc-Kf-TGe" secondAttribute="bottom" constant="15" id="J1Y-MD-wZb"/>
+                            <constraint firstItem="ZIh-4y-del" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QhL-kV-njb"/>
+                            <constraint firstItem="KjQ-SF-ebh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="krr-30-een"/>
+                            <constraint firstItem="KjQ-SF-ebh" firstAttribute="top" secondItem="W5r-A3-TaS" secondAttribute="bottom" constant="8" id="uQf-Bs-k7E"/>
+                            <constraint firstItem="6bc-Kf-TGe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zVP-CU-O9D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="KjQ-SF-ebh" id="Nkz-n3-Mz5"/>
+                        <outlet property="clearButton" destination="O3A-Tu-jkF" id="FI9-bK-p42"/>
+                        <outlet property="mapView" destination="W5r-A3-TaS" id="v6Q-bn-9Ym"/>
+                        <outlet property="startButton" destination="BT6-PU-7YN" id="sAw-tV-7CR"/>
+                        <outlet property="stopButton" destination="aXX-w9-bYx" id="sVN-Us-lcY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.26600985221674"/>
+        </scene>
+    </scenes>
+</document>
