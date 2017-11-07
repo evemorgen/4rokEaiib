@@ -1,0 +1,18 @@
+10:50:54 evemorgenu12.patryk.galczynski.cde.dev.onet PG_Advanced_UI feature/mobilki/lab4 ? diff MasterViewController.swift ../../../lab2/PG_Advanced_UI/PG_Advanced_UI/MasterViewController.swift
+20d19
+<     let persistentData = UserDefaults.standard
+47,48d45
+<         let savedAlbums: [[String:Any]] = persistentData.object(forKey: "savedAlbums") as! [[String : Any]]
+<
+63,71d59
+<             if savedAlbums != nil {
+<                 for album in savedAlbums {
+<                     let filtered = self.songs.filter { $0["album"] as! String == album["album"] as! String }
+<                     if filtered.count == 0 {
+<                         self.songs.append(album)
+<                     }
+<                 }
+<                 self.persistentData.set(self.songs, forKey: "savedAlbums")
+<             }
+85d72
+<                 persistentData.set(self.songs, forKey: "savedAlbums")
