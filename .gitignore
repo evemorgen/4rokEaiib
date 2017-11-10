@@ -1,6 +1,13 @@
-<<<<<<< HEAD
 **/.DS_Store
-=======
-*.swp
 .DS_STORE
->>>>>>> master
+**/*.swp
+**/*.swo
+**/*.orig
+**/*~HEAD
+**/*~HEAD_0
+**/*~master
+**/*~*
+**/*_REMOTE_*
+**/*_BACKUP_*
+**/*_BASE_*
+**/*_LOCAL_*
