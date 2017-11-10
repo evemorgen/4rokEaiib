@@ -1,0 +1,42 @@
+1. Jak informatyka usprawnia działania firmy?
+    - szeroko rozumiana "informatyka" dostarcza różnego rodzaju narzędzia analityczne pozwalające na optymalizację decyzji podejmowanych w firmie, np. excel, agregaty z hurtownii danych, analiza bigdata (hadoop?)
+    - pozwala na automatyzację nudnych/żmudnych dla człowieka zadań, przez co trzeba płacić pracownikom mniej, lub totalnie ich zastąpić (lub ich odciążyć) (maszyna się nie nudzi, heh)
+    - informatyzacja pozwoliła również na zrewolucjonizowanie środków komunikacji w firmach, mail/skype/video-konferencje, oszczędza to pieniądze na wyjazdy służbowe (email, skype, pexip)
+    - w dobie internetu proces rekrutacyjny stał się dla HRu dużo prostrzy, powstały i dalej powstają dedykowane serwisy do tego (nofluffjobs)
+    - w dobie internetu proces sprzedażowy został znacząco ułatwiony, w tym momencie, nie trzeba posiadać stacjonarnego sklepu nawet. (prestashop, shopify)
+    - znacznie został ułatwiony proces płatności zastępująć w niektórych branżach gotówkę totalnie. (payu, blik, mastercard itd.)
+    - systemy do systematyzowania zadań w zespołach, raportowania czasu pracy (jira, trello)
+    - typowa praca biurowa stała się bajecznie prosta (pakiet ms office, google docs, open office)
+    --------- narzędzia typowo pod programistów -----------
+    - narzędzia do statycznej analizy kodu (jak pySonar)
+    - narzędzia do CI (bamboo)
+    - narzędzia do usprawnienia pracy devops (victorops, pagerduty)
+    
+2. Jakie są rodzaje /branże przedsiębiorstw?
+    - media
+    - gastronomia
+    - handel
+    - podróże/hotelarstwo
+    - medycyna
+    - szeroko rozumiane IT
+    - logistyka (kurierzy, poczta)
+    - edukacja
+    - finanse (banki, instytucje parabankowe)
+    - administracja
+    - budownictwo
+    - rybołówstwo
+    ------------
+    - przecież_tak_można_w_nieskończoność?
+    ------------
+    - automoto
+    - lotnictwo
+    - przemysł wojskowy
+    
+3. Jak zbudowane jest przedsiębiorstwo i funkcjonuje?
+    - wydaje mi się że zależy to od wielkości przedsiębiorstwa, zakładam, że inaczej funkcjonuje firma będąca jednoosobową działalnością gospodarczą, a inaczej korporacja 300+ osób.
+    - również mi się wydaje, że występuje dużo rodzajów przedsiębiorstw, np. korporacje z określoną hierarchią (zarząd -> dyrektorzy -> PO/BO -> kierownicy liniowi -> szarzy pracownicy) oraz z takzwaną płaską strukturą.
+    - ponieważ przedsiębiorstwo to zazwyczaj nie instytucja charytatywna, jest nastawiona na zysk/zarabianie pieniędzy
+    - firma raczej nie może działać bez swoich pracowników, dlatego zapewne musi ich zatrudniać
+    - w zależności od branży, firma zarabia sprzedając swoje usługi/towary
+    - tu jeszcze można dużo napisać ale brakło czasu :(
+
