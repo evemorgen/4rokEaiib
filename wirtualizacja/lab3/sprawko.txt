@@ -1,0 +1,29 @@
+zadanie 5.
+Successfully built 7e8818d6836a
+13:27:29 evemorgenu12.patryk.galczynski.cde.dev.onet exc5 feature/wirtualizacja/lab3 ? docker run -u jan -ti 7e8818d6836a
+[jan@0a7865a1368c /]$ sudo yum install vim
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+[sudo] password for jan:
+Loaded plugins: fastestmirror, ovl
+Loading mirror speeds from cached hostfile
+ * base: mirror.onet.pl
+ * extras: ftp.wcss.pl
+ * updates: mirror.onet.pl
+Resolving Dependencies
+--> Running transaction check
+...
+
+Zadanie 6.
+13:58:32 evemorgenu12.patryk.galczynski.cde.dev.onet lab3 feature/wirtualizacja/lab3 ? docker pull mysql/mysql-server:5.7
+5.7: Pulling from mysql/mysql-server
+Digest: sha256:6305a35c134c9ad0724f77883dfd30fc9e4a640ba0d62a1b92b348944369aa9d
+Status: Downloaded newer image for mysql/mysql-server:5.7
+14:00:04 evemorgenu12.patryk.galczynski.cde.dev.onet lab3 feature/wirtualizacja/lab3 ? docker run --name mysql -e MYSQL_ROOT_PASSWORD=pass -d mysql/mysql-server:5.7
+f824e2239a9c5463ef64e33377f704220669ed4a5ce34992eef6f166932612b2
