@@ -2,6 +2,8 @@ import time
 import serial
 import yaml
 import fire
+import sys
+import subprocess
 
 mock = True
 
@@ -76,4 +78,20 @@ class Commands(object):
 
 
 if __name__ == '__main__':
-    fire.Fire(Commands)
+    macros = yaml.load(open('macros.yaml'))
+    if "macro" in sys.argv:
+        macros[sys.argv[2]] = sys.argv[3]
+        with open('macros.yaml', 'w') as yaml_file:
+            yaml.dump(macros, yaml_file, default_flow_style=False)
+    else:
+        for arg in sys.argv:
+            if arg in macros:
+                command = "python3 `pwd`/visca_control.py %s" % macros[arg]
+                process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
+                outs, errs = process.communicate(timeout=10)
+                if outs is not None:
+                    print(outs.decode('utf-8'))
+                if errs is not None:
+                    print(errs.decode('utf-8'))
+                sys.exit(0)
+        fire.Fire(Commands)
