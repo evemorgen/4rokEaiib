@@ -14,7 +14,7 @@ class MyFormHandler(tornado.web.RequestHandler):
 
     def post(self):
         self.set_header("Content-Type", "text/html")
-        text_box = self.get_body_argument("command_box").replace("\n", " ").replace("\r", " ")
+        text_box = self.get_body_argument("command_box").replace("\n", " ").replace("\r", " ").replace(",", "")
         command = "python3 `pwd`/visca_control.py %s" % text_box
         process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
         outs, errs = process.communicate(timeout=10)

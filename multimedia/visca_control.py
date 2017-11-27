@@ -4,8 +4,9 @@ import yaml
 import fire
 import sys
 import subprocess
+import struct
 
-mock = True
+mock = False
 
 
 class Commands(object):
@@ -15,12 +16,24 @@ class Commands(object):
         self.cam = 1
         if mock is False:
             self.ser = serial.Serial('/dev/tty.wchusbserial1420', 9600)
+            pass
         else:
             print("Would open serial port: %s with speed %s" % ('/dev/tty.wchusbserial1420', 9600))
 
     def call_command(self, command):
         if mock is False:
-            self.ser.write(bytearray(command))
+            print("Sending %s to camera" % command)
+            # "0x81 0x01 0x06 0x01 0x05 0x05 0x03 0x01 0xFF"
+            # self.ser.write(bytearray("0x88 0x01 0x06 0x04 0xFF"))
+            self.ser.write(bytearray([int(x, 16) for x in command.split(" ")]))
+            #while True:
+            time.sleep(1)
+            out = self.ser.read(self.ser.inWaiting())
+            codes = struct.unpack("<" + "B" * len(out), out)
+            if len(codes) > 0 and codes[1] == 96:
+                print("ERROR FOUND -  %s" % str(codes))
+            else:
+                print("OK - %s" % str(codes))
         else:
             print("Would send command to camera %s: %s" % (self.cam, command))
 
